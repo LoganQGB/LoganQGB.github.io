@@ -1,0 +1,142 @@
+*{
+    margin: auto;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0a0f1f, #101b2d);
+  color: #e6e9ef;
+}
+
+.bvn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 4rem 0 3rem 0;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #1e90ff, #00aaff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(30, 144, 255, 0.3);
+  animation: fadeInDown 1.5s ease forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bvn::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  margin: 12px auto 0;
+  background: linear-gradient(90deg, #1e90ff, #00aaff);
+  border-radius: 3px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { opacity: 0.5; transform: scaleX(0.9); }
+  to { opacity: 1; transform: scaleX(1.1); }
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0f1f, #101b2d);
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  color: #e6e9ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid rgba(30, 144, 255, 0.2);
+}
+
+.card-front {
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.card:hover .card-front {
+  border-color: rgba(30, 144, 255, 0.5);
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.3);
+}
+
+.card-back {
+  background: rgba(15, 25, 45, 0.85);
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+.card-back::-webkit-scrollbar {
+  width: 6px;
+}
+.card-back::-webkit-scrollbar-thumb {
+  background: rgba(30, 144, 255, 0.3);
+  border-radius: 10px;
+}
+  
+
+div.presentation {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+div.presentation div{
+    background-color: rgb(189, 211, 221);
+    padding: 5px 5px 5px 5px;
+    border-radius: 50% 20% / 10% 40%;
+    text-align: center;
+}
