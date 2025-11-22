@@ -1,1 +1,0 @@
-# LoganQGB.github.io
