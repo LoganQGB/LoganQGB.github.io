@@ -1,0 +1,128 @@
+*{
+    margin: auto;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0f1f, #324c75);
+    color: #e6e9ef;
+    font-family: Arial, sans-serif;
+  }
+
+.titre {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.titre:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #4eaaff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #4eaaff, 0 0 20px #4eaaff;
+}
+
+.soustitre {
+    color: #4eaaff;
+    text-shadow: 0 0 3px #4eaaff, 0 0 6px #4eaaff;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* PRINCIPE */
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.text-box {
+    max-width: 550px;
+}
+
+.text-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* DIFFERENCE */
+
+
+.text-box2 {
+    max-width: 750px;
+}
+
+.text-box2 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.text-box2 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-box2 img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 100px;
+    background-color: rgba(219, 237, 236, 0.849);
+}
+
+
+/* OUTILS */
+.outils {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px;
+    margin-bottom: 40px;
+    background-color: rgba(20, 122, 211, 0.5);
+    border-radius: 30px;
+}
+
+.image-box img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.text-box {
+    max-width: 550px;
+}
+
+.text-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

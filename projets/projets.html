@@ -85,37 +85,58 @@
     <div class="titre">
         <h1>Mes Projets</h1>
     </div>
-
-    <div class="all-projects">
-    <div class="school">
-        <h2>Mon projet scolaire</h2>
-        <h3>Déploiement automatique de serveurs Minecraft</h3>
-        <div class="container">
-            <div class="card">
-                <img src="minecraft.jpg" alt="Déploiement serveur minecraft">
-                <div class="content">
-                    <p>L’objectif de ce projet est de déployer automatiquement des containers et un serveur Minecraft intégré.</p>
-                    <p>POD équipés d’un Proxmox, containers, Ansible, playbook.</p>
-                </div>
-            </div>
+   <div class="soustitre">Déploiement de serveurs Minecraft avec Ansible</div>
+    
+    <section class="container">
+        <div class="image-box">
+            <img src="minecraft.jpg" alt="Image de virtualisation">
         </div>
-    </div>
 
-    <div class="pro">
-        <h2>Mon projet professionnel</h2>
-        <h3>Mise en place d'un Active directory</h3>
-        <div class="container">
-            <div class="card">
-                <img src="ad.png" alt="Jeux de rôle">
-                <div class="content">
-                    <p>L’objectif de ce projet est de mettre en place un contrôleur de domaine dans mon entreprise.</p>
-                    <p>Cela permettra de gérer efficacement les serveurs, station de travail, utilisateurs et applications.</p>  
-                    <p>Machines virtuelles, Windows server 2022, GPO...</p>
-                </div>
-            </div>
+        <div class="text-box">
+            <h2>Objectif</h2>
+            <p>
+                Le but de ce projet est de déployer des serveurs Minecraft de manière automatique avec Ansible. 
+                La création d'un containers plus sa configuration peut prendre beaucoup de temps. Avec Ansible
+                nous pouvons créer des playbook permettant de déployer toutes les dépendances nécessaire au 
+                fonctionnement d'un serveur Minecraft et sur beaucoup de container en simultanés.
+            </p>
+            <p>
+                Ce projet est une demande de mon entreprise. En effet cette dernière ne possède actuellement pas de
+                controleur de domaine Active Directory. Cela pose des gros problèmes de sécurité et de contrôle d'accès.
+            </p>
+            <p>
+                <strong>Technologies utilisées :</strong> Windows serveur 2022, Machine virtuelle, GPO, PowerShell...
+            </p>
+
         </div>
-    </div>
-</div>
+    </section>
+
+    <div class="soustitre">Mise en place d'un Active Directory</div>
+
+    <section class="container">
+
+        <div class="text-box">
+            <h2>Objectif</h2>
+           <p>
+                Ce projet est une demande de mon entreprise. En effet cette dernière ne possède actuellement pas de
+                controleur de domaine Active Directory. Cela pose des gros problèmes de sécurité et de contrôle d'accès.
+            </p>
+
+            <p>
+                Nous allons donc mettre en place deux controleur de domaine en réplication dans deux bâtiments différents
+                afin d'assurer la continuité de service. Cela permettra aussi de créer des GPO afin d'appliquer des règles
+                à l'ensemble des utilisateurs.
+            </p>
+            <p>
+                <strong>Technologies utilisées :</strong> Windows serveur 2022, Machine virtuelle, GPO, PowerShell...
+            </p>
+        </div>
+
+        <div class="image-box">
+            <img src="ad.png" alt="Image de virtualisation">
+        </div>
+    </section>
+
 
 </body>
 
