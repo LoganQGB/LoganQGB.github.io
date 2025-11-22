@@ -89,7 +89,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
   padding: 1.5rem;
   color: #e6e9ef;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -102,6 +102,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
+  display: flex;
 }
 
 .card:hover .card-front {
@@ -117,6 +118,11 @@ body {
   text-align: justify;
   overflow-y: auto;
   padding-right: 1rem;
+}
+.card-back ul {
+  margin-left: 1.2rem;
+  padding-left: 0;
+  list-style-type: disc;
 }
 
 .card-back::-webkit-scrollbar {
@@ -139,4 +145,50 @@ div.presentation div{
     padding: 5px 5px 5px 5px;
     border-radius: 50% 20% / 10% 40%;
     text-align: center;
+}
+
+.lecv {
+    margin-top: 50px;
+}
+
+.lecv h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.lecv h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #4eaaff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #4eaaff, 0 0 20px #4eaaff;
+}
+
+.tableau {
+    margin-top: 100px;
+}
+
+.tableau h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.tableau h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #4eaaff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px #4eaaff, 0 0 20px #4eaaff;
 }
